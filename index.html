@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Bank | Bankist app</title>
+		<link rel="stylesheet" href="style.css" />
+		<script defer src="main.js"></script>
+	</head>
+	<body>
+		<header class="header">
+			<nav class="nav-bar">
+				<div class="bank-logo">
+					<p class="bank-name-2">M</p>
+				</div>
+				<div class="bank-user-message">
+					<p>Hi,<span class="welcome-msg">please login</span></p>
+				</div>
+				<div class="nav-user-section">
+					
+					<form class="create-account">
+						<input
+							type="text"
+							id="user-name"
+							class="user"
+							placeholder="Username"
+							required="true"
+						/>
+
+						<input
+							type="password"
+							id="user-id"
+							class="user"
+							placeholder="Password"
+							required="true"
+						/>
+						<input type="submit" value="Login" class="btn login" />
+					</form>
+				</div>
+			</nav>
+		</header>
+			<!--MAIN APP SECTION-->
+		<main class="main-app">
+			<section class="overview-section">
+				<div class="overview">
+					<h3>Current Balance</h3>
+					<span class="date">11/12/2031</span>
+				</div>
+				<div class="warning">
+					<span class="warning-msg">Welcome to Your bank account! </span>
+					<span class="close-msg">&times;</span>
+				</div>
+				<h3 class="overview-balance">$45954</h3>
+			</section>
+			<section class="transection-details">
+				<!-- DETAILS ROW -->
+				<div class="main-row">
+					<!-- <section class="transection-row">
+						<p class="transection-type">Deposit</p>
+						<p class="transection-date">12/12/12</p>
+						<p class="transection-value">$234</p>
+					</section> -->
+				</div>
+				<!-- MONEY TRANSFER SECTION-->
+
+				<section class="bank-info">
+					<div class="money-transfer account">
+						<h3>Transfer money</h3>
+						<input
+							type="text"
+							id="transfer-money-to"
+							class="transfer-to user"
+							placeholder="Transfer To"
+							required
+						/>
+
+						<input
+							type="number"
+							id="transfer-money-amount"
+							class="transfer-to user"
+							placeholder="Amount"
+							required
+						/>
+						<button class="btn transfer">Transfer &rAarr;</button>
+					</div>
+
+
+					<!-- lOAN SECTION-->
+					<div class="money-loan account">
+						<h3>Loan</h3>
+
+						<input
+							type="number"
+							id="loan"
+							class="transfer-to user"
+							placeholder="Amount"
+							required
+						/>
+						<button class="btn loan-money">Loan &rAarr;</button>
+					</div>
+					<!-- SORT SECTION -->
+					 <div class=" account">
+						<button class="btn  sorted sort--deposit">Show deposit</button>
+						<button class="btn sorted sort--withdraw">Show withdraw</button><div>
+
+							<button class="btn all">All</button>
+							<button class="btn sort">Sort &rAarr;</button>
+						</div>
+
+				</section>
+
+				<!-- summery section -->
+				<section class="summery">
+					<p class="summery-in">In <span class="text in">$300</span></p>
+
+					<p class="summery-out">Out <span class="out text">$300</span></p>
+
+					<p class="summery-interest">
+						Interest <span class="interest text">$30</span>
+					</p>
+
+				</section>
+			</section>
+		</main>
+		<!-- login help section -->
+		<div class="help">
+			<h2 class="help-text">Here are login information</h2>
+			<table>
+				<tr class="table-heading">
+					<th>Username</th>
+
+					<th>Password</th>
+				</tr>
+				<tr>
+					<td>ma</td>
+					<td>1111</td>
+				</tr>
+				<tr>
+					<td>sm</td>
+					<td>2222</td>
+				</tr>
+				<tr>
+					<td>rir</td>
+					<td>3333</td>
+				</tr>
+			</table>
+			<h4 class="login-msg">please login use this user name and password</h4>
+		</div>
+		<!-- logout  -->
+		<div class="logout_btn btn">Logout</div>
+	</body>
+</html>

@@ -1,0 +1,270 @@
+
+*{
+	margin: 0;
+}
+:root{
+	--band-color:rgba(0, 255, 255,.5);
+	--radius:15px;
+	--secondary-color:rgb(202, 199, 199,0.5);
+	--shadow: 1px 3px 5px black;
+
+}
+body{
+	background-color: var(--band-color);
+	/* background-color: rgba(0, 255, 255,.5); */
+	object-fit: cover;
+	background-repeat: no-repeat;
+	/* color: ; */
+}
+li{
+	list-style-type: none;
+}
+
+.btn{
+	padding: 10px 0;
+	outline: none;
+	border: 1px solid var(--band-color);
+	border-radius: var(--radius);
+	cursor: pointer;
+	background-color: #fff;
+	font-size: 24px;
+	box-shadow: var(--shadow);
+
+}
+.header{
+	/* max-width: 100rem; */
+	/* padding: 1.5rem; */
+	background-color: #fff;
+	padding-top: 15px;
+	height: 90px;
+	box-shadow: var(--shadow)
+
+}
+
+.nav-bar{
+	display: flex;
+	justify-content: space-between;
+}
+.links{
+	width: 20rem;
+}
+.link{
+	display: inline-block;
+	margin: 10px;
+	font-size: 20px;
+	font-weight: 900;
+	border: 1px solid var(--band-color);
+	padding: 5px;
+	font-size: 22px;
+	cursor: pointer;
+}
+.nav-user-section{
+	display: flex;
+}
+
+.create-account{
+	width: 20rem;
+
+}
+
+.user{
+	width: 5rem;
+	padding:10px 0;
+	border-radius: var(--radius);
+	border: 1px solid var(--band-color);
+	outline: none;
+	text-indent: 10px;
+	box-shadow: var(--shadow)
+
+}
+.bank-logo{
+	font-size: 3rem;
+	font-weight:normal;
+	border: 5px solid var(--band-color);
+	margin-left: 20px;
+	box-shadow: var(--shadow);
+
+}
+.bank-user-message{
+	margin-top: 20px;
+	font-size: 16px;
+}
+
+/* ************************ */
+
+
+.main-app{
+	width: 80%;
+	/* he: 50%; */
+	margin: 0 auto;
+	opacity: 0;
+	transform: translateX(100%);
+
+}
+
+.show{
+	opacity: 1;
+	transition: 1.5s;
+	transform: translateX(0);
+}
+.transection-details{
+	border-radius: 30px;
+	display: grid;
+	grid-template-columns: 3fr 1fr;
+	/* background-color: #fff; */
+	background:var(--band-color);
+	box-shadow: var(--shadow);
+	
+}
+
+.overview-section{
+	display: flex;
+	justify-content: space-between;
+	height: 5rem;
+	align-items: center;
+}
+
+.close-msg{
+	cursor: pointer;
+	/* background-color: red; */
+	color: red;
+	padding: 10px;
+
+}
+::-webkit-scrollbar{
+	width: 5px;
+	/* border-radius: var(--radius); */
+}
+.main-row::-webkit-scrollbar-track{
+	 scrollbar-color: var(--secondary-color);
+
+} 
+
+.main-row{
+	width: 90%;
+	padding-left: 7%;
+	height:30.5rem ;
+	overflow: auto;
+	
+	
+}
+.transection-row{
+	display: flex;
+	justify-content: space-between;
+	min-width: 15rem;
+	background: #fff;
+	border-bottom: 1px solid var(--secondary-color);
+	padding: 20px 5px;
+	box-shadow: var(--shadow);
+	margin: 10px 0;
+	border-radius: var(--radius);
+}
+.transection-type{
+	margin-left: 20px;
+	font-size: 24px;
+}
+
+.movement-type--Deposit{
+	background-color: rgb(79, 224, 79);
+	padding: 5px;
+	border-radius: var(--radius);
+}
+.movement-type--Withdraw{
+	background-color:rgb(233, 79, 79);
+	padding: 5px;
+	border-radius: var(--radius);
+}
+
+.summery{
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	width: 85%;
+	margin-left: 8%;
+}
+
+.text{
+	font-size: 30px;
+}
+
+.transection-value{
+	font-weight: bold;
+	font-size:24px ;
+	margin-right: 20px;
+}
+
+.account{
+	min-width: 13rem;
+	height: 10rem;
+	/* background-color: var(--secondary-color); */
+	border-radius: 30px;
+	padding-left: 15px;
+	margin-bottom: 10px;
+	box-shadow: var(--shadow);
+}
+/* .sort{
+	width: 100%;
+	margin-top:36px ;
+} */
+
+.all,.sort{
+	width: 40%;
+	margin-left: 10px;
+}
+ .sorted,.close,.transfer,.loan-money,#loan{
+	width: 90%;
+	margin: 10px;
+}
+
+#transfer-money-to,#transfer-money-amount,.close-acc{
+	width: 43%;
+}
+.account h3{
+	text-align: center;
+	font-size: 1.8rem;
+}
+
+.help{
+	position: absolute;
+	top: 30%;
+	left:15%;
+	width: 600px;
+	box-shadow: var(--shadow);
+	padding: 10px;
+	/* height: 500px; */
+}
+
+.help h2{
+	font-size: 2.5rem;
+	color: gray;
+}
+table{
+	width: 100%;
+	font-size: 2rem;
+	color: gray;
+}
+.table-heading{
+	text-align: left;
+}
+
+.login-msg{
+	color: gray;
+	margin-top: 30px;
+}
+.logout_btn{
+	position: absolute;
+	top: 17px;
+	right: 112px;
+	display: none;
+	/* opacity: 0; */
+	/* transform: translateX(100%); */
+	z-index: 1;
+}
+
+.hidden{
+	display: block;
+	transition: 3s;
+}
+.warning{
+	display: none;
+}
