@@ -5,7 +5,6 @@ const user_id = document.querySelector("#user-id")
 const user_login = document.querySelector(".login")
 const main_app = document.querySelector(".main-app")
 
-// const transection_detail=document.querySelector('.transection-details')
 const movement_area = document.querySelector(".main-row")
 // overview section
 const main_balance = document.querySelector(".overview-balance")
@@ -145,7 +144,7 @@ function updateUI(account) {
 }
 let current_user
 let unsorted
-
+// LOGIN SECTION/////////////////////
 user_login.addEventListener("click", function (e) {
 	e.preventDefault()
 	const user_value = user_name.value
@@ -175,6 +174,7 @@ function warning(msg,color){
 	warning_section.style.display='block'
 }
 
+// 	LOAN SECTION///////////////////
 function loan_approve_delay(){
 	const loan = parseInt(loan_money_amount.value)
 	const loan_amount=current_balance*.40
@@ -214,7 +214,7 @@ loan_money_btn.addEventListener("click", function (e) {
 	setTimeout(loan_approve_delay,3000)
 })
 
-
+//TRANSFER SECTION////////////////
 function clearInput() {
 	transfer_money_to.value = ""
 	transfer_amount.value = ""
