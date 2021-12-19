@@ -43,6 +43,7 @@ li{
 
 
 .nav-bar{
+	width: 100%;
 	display: flex;
 	justify-content: space-between;
 }
@@ -268,4 +269,33 @@ table{
 }
 .warning{
 	display: none;
+}
+   
+
+
+/* *************** media query */
+
+
+@media only screen and (max-width:425px) {
+	.bank-user-message{
+		display: none;
+	}
+	.help{
+		width: 354px;
+		font-size: 20px;
+		margin-left: -43px;
+	}
+	.help h2{
+		font-size: 20px;
+	}
+
+	.help h4{
+		font-size: 20px;
+	}
+	.table-heading{
+		font-size: 20px;
+	}
+	.transection-details{
+		width: 100%;
+	}
 }
